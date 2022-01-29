@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,151 +9,57 @@
             rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
-        <!-- <link rel="android-chrome" sizes="192x192" href="img/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png"> -->
-        <link rel="manifest" href="/site.webmanifest">
-        <title>Bùi Hồng Sơn </title>
+
+        <title>My Crush</title>
     </head>
     <body>
         <div class="app">
-            <div class="card mg-10">
+            <div class="card mg-10" id="card1">
                 <div class="card__title">
-                    <div class="card__title--img">
-                        <img src="./avatar.png" alt="" srcset="">
+                    <div class="col_third" id="heart">	
+                        <i class="fa fa-heart fa-8x"></i>
                     </div>
                     <div class="card__title--name">
-                        <h1> Bùi Hồng Sơn </h1>
-                        <div class="veri__check">
-                            <i class="fas fa-check"></i>
-                        </div>
+                        <h1> Sang năm 2022 Crush có ♥ bạn không? </h1>
                     </div>
-                    <div class="card__title--description">
-                        <p>Tôi Là Một FacebookService </p>
-                    </div>
-                </div>
-                <div class="card__body mt-10">
-                    <div class="row">
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://www.facebook.com/mewtoxic.2k4.Official" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-facebook"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://www.instagram.com/mew.073/" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://www.tiktok.com/@mew.037" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-tiktok"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://playerduo.com/mewnee" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-github"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://www.youtube.com/channel/UCoXIHUbvPkN50WybUD721UA" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-youtube" style="color: red;"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://github.com/mew2k4/bhs037" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="mailto:buihongsonnbb@gmail.com" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-google" style="color: red;"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="#" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-twitter"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="toggle toggle__back">
-                    <a href="https://mew2k4.github.io/mew037/"><i class="fas fa-arrow-left"></i></a>
-                </div>
-                <div class="toggle toggle__theme">
-                    <i class="fas fa-moon"></i>
                 </div>
                 <div class="button__list mt-10">
                     <div class="row">
                         <div class="col col-lg-6 mt-10">
-                            <a href="https://m.me/mewtoxic.2k4.Official" target="_blank">
-                                <div class="button button__message ">
-                                    <span> Nhắn Tin </span>
-                                </div>
-                            </a>
+                            <div class="button button__message btnNo" onclick="showMess()">
+                                <span>  </span>
+                            </div>
                         </div>
                         <div class="col col-lg-6 mt-10">
-                            <a href="https://www.facebook.com/mewtoxic.2k4.Official" target="_blank">
-                                <div class="button button__subscribe ">
-                                    <span> Theo Dõi </span>
-                                </div>
-                            </a>
+                            <div class="button button__subscribe btnNo" onclick="showMess()">
+                                <span> Không </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card__footer mt-10">
-                    <div class="footer__item">
-                        <span>
-                            <i class="fas fa-heart"></i>
-                            457.5K
-                        </span>
-                    </div>
-                    <div class="footer__item">
-                        <span>
-                            <i class="fa fa-comment"></i>
-                            165.7K
-                        </span>
-                    </div>
-                    <div class="footer__item">
-                        <span>
-                            <i class="fa fa-share"></i>
-                            286.2K
-                        </span>
                     </div>
                 </div>
             </div>
+
+            <div class="card mg-10" id="card2" style="display: none;">
+                <div class="card mg-10">
+                    <div style="height: 30px;"></div>
+                    <div class="card__title--name">
+                        <h1> 
+                            <span style="color: red;">Chúc mừng</span>
+                            <br> Bạn đã chọn đúng! <br>
+                            <span> Đợi chờ Crush ♥ bạn như đợi chờ 30 Tết năm nay vậy! Tốn công vô ích ! 🥲 </span>
+                        </h1>
+                    </div>
+                    <div style="height: 30px;"></div>
+                </div>
+            </div>
         </div>
-        <script src="./script.js"></script>
+        
+        <script >
+            function showMess()
+            {
+                document.getElementById("card1").style.display = 'none';
+                document.getElementById("card2").style.display = "inline";
+            }
+        </script>
     </body>
 </html>
